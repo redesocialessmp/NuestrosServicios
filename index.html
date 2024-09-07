@@ -14,7 +14,7 @@
                 <a href="#" onclick="mostrar(2)" class="boton" id="contacto">Contacto</a>
             </nav>
 
-            <div class="pag" id="pag0">
+            <div class="pag activa" id="pag0">
                 <h1 style="font-size: 50px;">NUESTROS <br> SERVICIOS</h1>
                 <center>
                     <img src="Logo.png" height="400px" width="400px" style="margin-left:-20px;">
@@ -22,15 +22,16 @@
                 </center>
             </div>
 
-            <div class="pag activa" id="pag1">
+            <div class="pag" id="pag1">
                 <center>
+                    <p id="INICIO" style="visibility: hidden;">.</p>
                     <h2 style="margin-top: 200px; font-size: 40px;">GESTIÓN DE <br>
                         REDES SOCIALES</h2>
                     <p style="font-size: 20px;">Facebook | Instagram | Tiktok</p>
                     
                     <p>MÁS SERVICIOS</p>
                     <a href="#CREACIÓN">
-                        <img src="Flecha.png" height="50px" id="flecha" >
+                        <img src="Flecha2.png" height="50px" id="flecha" >
                     </a>
                     <p id="CREACIÓN" style="margin-top: 800px; visibility: hidden;">.</p>
                     <h2 style="margin-top: 50px; font-size: 40px; border-bottom: solid 2px white;">CREACIÓN DE <br>
@@ -39,36 +40,100 @@
                     <p style="margin-top: 30px; background-color: #626281; border-radius: 20px; opacity: 0.9; padding: 3%;">Ofrecemos contenido visual y audiovisual</p>
                     
                     <p>MÁS SERVICIOS</p>
-                    <a href="#SEGUIMIENTO">
-                        <img src="Flecha.png" height="50px" id="flecha" >
-                    </a>
+                    <div>
+                        <a href="#SEGUIMIENTO">
+                            <img src="Flecha2.png" height="50px" id="flecha" >
+                        </a>
+                        <a href="#INICIO">
+                            <img src="Flecha.png" height="50px" id="flecha">
+                        </a>
+                    </div>
+                    
                 </center>
-                <p id="SEGUIMIENTO" style="margin-top: 850px; visibility: hidden;">.</p>
-                <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 80px;">SEGUIMIENTO <br>SEMANAL</h1>
-                <div id="contenedorCajas">
+                <p id="SEGUIMIENTO" style="margin-top: 800px; visibility: hidden;">.</p>
+                <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 50px;">SEGUIMIENTO <br>SEMANAL</h1>
+                <div class="contenedorCajas">
                     <div id="caja1"></div>
                     <div id="caja2"></div>
                 </div>
-                <div id="contenedorSeguimientoSemana">
-                    <p class="textoSeguimientoSemana">Monitorear y mantener activa la cuenta</p>
-                    <p class="textoSeguimientoSemana">Pautas para la creación de contenido</p>
-                    <p class="textoSeguimientoSemana">Comprobación y actualización del calendario de contenidos</p>
-                    <p class="textoSeguimientoSemana">Respuesta a los comentarios y preguntas</p>
-                    <p class="textoSeguimientoSemana">Supervisación a las menciones de la marca en internet</p>
-                    <p class="textoSeguimientoSemana">Descubre palabras clave relacionadas con el sector</p>
+                <div class="contenedorSeguimiento">
+                    <p class="textoSeguimiento">Monitorear y mantener activa la cuenta</p>
+                    <p class="textoSeguimiento">Pautas para la creación de contenido</p>
+                    <p class="textoSeguimiento">Comprobación y actualización del calendario de contenidos</p>
+                    <p class="textoSeguimiento">Respuesta a los comentarios y preguntas</p>
+                    <p class="textoSeguimiento">Supervisación a las menciones de la marca en internet</p>
+                    <p class="textoSeguimiento">Descubre palabras clave relacionadas con el sector</p>
                 </div>
                 <center>
                     <p>MÁS SERVICIOS</p>
-                    <a href="#SEGUIMIENTO">
-                        <img src="Flecha.png" height="50px" id="flecha" >
+                    <a href="#SEGUIMIENTOMENSUAL">
+                        <img src="Flecha2.png" height="50px" id="flecha" >
+                    </a>
+                    <a href="#CREACIÓN">
+                        <img src="Flecha.png" height="50px" id="flecha">
                     </a>
                 </center>
-                
+                <p id="SEGUIMIENTOMENSUAL" style="margin-top: 400px; visibility: hidden;">.</p>
+                <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 40px;">SEGUIMIENTO <br>MENSUAL</h1>
+                <div class="contenedorCajas">
+                    <div id="caja3"></div>
+                    <div id="caja4"></div>
+                    <div id="caja5"></div>
+                </div>
+                <div class="contenedorSeguimiento">
+                    <p class="textoSeguimiento">Recolección de estadísticas y creación de un informe para comparar mensualmente y analizar el crecimiento de la cuenta. </p>
+                    <p class="textoSeguimiento">Definición de los diferentes tipos de contenido del mes siguiente.</p>
+                    <p class="textoSeguimiento">Actualización del calendario de publicación mensual.</p>
+                    <p class="textoSeguimiento">Integración de las estrategias exitosas de meses anteriores en la estrategia mensual siguiente.</p>
+                    <p class="textoSeguimiento">Realización de campañas de publicidad</p>
+                </div>
+                <center>
+                    <p>MÁS SERVICIOS</p>
+                    <a href="#ACESORIAS">
+                        <img src="Flecha2.png" height="50px" id="flecha" >
+                    </a>
+                    <a href="#SEGUIMIENTO">
+                        <img src="Flecha.png" height="50px" id="flecha">
+                    </a>
+                    <p id="ACESORIAS" style="margin-top: 600px; visibility: hidden;">.</p>
+                    <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 240px;">ASESORÍAS <br>PERSONALIZADAS</h1>
+                    <p>
+                        Contamos con asesorías personalizadas donde te recomendaremos
+                        estrategias y contenidos que pueden ayudar a crecer tu negocio en redes y
+                        en base a eso se personaliza tu calendario de contenido mensual
+                    </p>
+                    <p style="margin-top: 300px;">MÁS SERVICIOS</p>
+                    <a href="#MATERIAL">
+                        <img src="Flecha2.png" height="50px" id="flecha" >
+                    </a>
+                    <a href="#SEGUIMIENTOMENSUAL">
+                        <img src="Flecha.png" height="50px" id="flecha">
+                    </a>
+                    <p id="MATERIAL" style="margin-top: 600px; visibility: hidden;">.</p>
+                    <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 240px;">MATERIAL POP</h1>
+                    <p>Te ayudamos a realizar tu material POP</p>
+                    <p style="margin-top: 300px;">MÁS SERVICIOS</p>
+                    <a href="#ACESORIAS">
+                        <img src="Flecha.png" height="50px" id="flecha">
+                    </a>
+                </center>
             </div>
             
             <div class="pag" id="pag2">
-                <h2>Contacto</h2>
-                <p>Si tienes alguna duda o quieres cotizar con nosotros, comunícate por nuestro correo redesocialessmp@gmail.com o por nuestro número +34 696 90 79 98.</p>
+                <center>
+                    <h2 style="font-size: 45px; margin-top: 50%;">CONTÁCTANOS</h2>
+                    <p>
+                        Si tienes alguna duda o quieres cotizar con <br> nosotros, 
+                        comunícate por nuestro correo 
+                        <span style="color: yellow;">redesocialessmp@gmail.com</span> <br>
+                        o por nuestro número<br> 
+                        <span style="color: yellow;">+34 696 90 79 98</span>
+                    </p>
+                    <div>
+                        <img src="correo.webp" width="70px" style="opacity: 0.7;">
+                        <img src="telefono.webp" width="70px" style="opacity: 0.7;">
+                    </div>
+                </center>
             </div>
         </div>
     </body>
