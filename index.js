@@ -30,14 +30,11 @@ function mostrar(indexPagina) {
     setTimeout(() => {
         paginas[indexPagina].style.display = 'block';
     }, 400);
+    document.body.style.width = "95%";
     setTimeout(() => {
         paginas[indexPagina].style.opacity = '1';
         paginas[indexPagina].style.transform = 'translateX(0)';
         paginas[indexPagina].style.zIndex = '1';
-        var body = document.querySelector('body');
-        var container = document.getElementsByClassName('container')
-        container.style.width = "95%";
-        body.style.width = "95%";
     }, 600);
     botones[indexPagina].className = "boton activo";
 }
