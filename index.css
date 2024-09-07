@@ -4,6 +4,10 @@
     font-weight: bold;
     font-style: normal;
 }
+html {
+    scroll-behavior: smooth;
+}
+  
 body {
     font-family: 'The Seasons Bold', sans-serif;
     margin-top: 30px;
@@ -15,7 +19,6 @@ body {
     background-color: rgba(45, 45, 65, 1);
     background-blend-mode: overlay;
     color: white;
-    
 }
 .container {
     width: 95%;
@@ -25,13 +28,18 @@ body {
 .pag {
     display: none;
     padding: 20px;
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);^*/
 }
 .pag.activa {
     display: block;
 }
 nav {
-    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #49438b;
+    border-radius: 20px;
+    position: fixed;
+    width: 95%;
+    height: 40px;
+    top: 25px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -47,4 +55,24 @@ nav a {
 }
 .boton.activo{
     border-top: solid yellow 5px;
+}
+
+#flecha{
+    animation: temblar 0.5s infinite;
+}
+@keyframes temblar {
+    0% {
+      transform: rotateZ(-2deg) scale(0.8);
+    }
+    50% {
+      transform: rotateZ(0deg) scale(1);
+    }
+    100% {
+      transform: rotateZ(2deg) scale(0.8);
+    }
+  }
+
+#caja1{
+    display: grid;
+    
 }

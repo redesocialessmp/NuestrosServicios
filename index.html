@@ -8,28 +8,51 @@
     <body>
         <script src="index.js"></script>
         <div class="container">
-                <nav>
-                    <a href="#" onclick="mostrar(0)" class="boton activo" id="inicio">Inicio</a>
-                    <a href="#" onclick="mostrar(1)" class="boton" id="servicios">Servicios</a>
-                    <a href="#" onclick="mostrar(2)" class="boton" id="contacto">Contacto</a>
-                </nav>
-            <div class="pag activa" id="pag0">
+            <nav>
+                <a href="#" onclick="mostrar(0)" class="boton activo" id="inicio">Inicio</a>
+                <a href="#" onclick="mostrar(1)" class="boton" id="servicios">Servicios</a>
+                <a href="#" onclick="mostrar(2)" class="boton" id="contacto">Contacto</a>
+            </nav>
+
+            <div class="pag" id="pag0">
                 <h1 style="font-size: 50px;">NUESTROS <br> SERVICIOS</h1>
                 <center>
                     <img src="Logo.png" height="400px" width="400px" style="margin-left:-20px;">
                     <p style=" font-size: 15px;">Conoce todos los servicios que ofrecemos.</p>
                 </center>
             </div>
-            <center>
-            <div class="pag" id="pag1">
-                <h2>GESTIÓN DE <br>
-                    REDES SOCIALES</h2>
-                <p>Facebook | Instagram | Tiktok</p>
-                <h2>CREACIÓN DE <br>
-                    CONTENIDO</h2>
-                <p>Se realiza la creación de contenido a base de las necesidades de tus redes y de un análisis previo del rublo en el que se encuentra, con el fin de lograr crear el tipo de contenido más acertado para tu negocio.</p>
+
+            <div class="pag activa" id="pag1">
+                <center>
+                    <h2 style="margin-top: 200px; font-size: 40px;">GESTIÓN DE <br>
+                        REDES SOCIALES</h2>
+                    <p style="font-size: 20px;">Facebook | Instagram | Tiktok</p>
+                    
+                    <p>MÁS SERVICIOS</p>
+                    <a href="#CREACIÓN">
+                        <img src="Flecha.png" height="50px" id="flecha" >
+                    </a>
+                    <p id="CREACIÓN" style="margin-top: 800px; visibility: hidden;">.</p>
+                    <h2 style="margin-top: 50px; font-size: 40px; border-bottom: solid 2px white;">CREACIÓN DE <br>
+                        CONTENIDO</h2>
+                    <p style="font-size: 15px; margin-top: 40px;">Se realiza la creación de contenido a base de las necesidades de tus redes y de un análisis previo del rublo en el que se encuentra, con el fin de lograr crear el tipo de contenido más acertado para tu negocio.</p>
+                    <p style="margin-top: 30px; background-color: #626281; border-radius: 20px; opacity: 0.9; padding: 3%;">Ofrecemos contenido visual y audiovisual</p>
+                    
+                    <p>MÁS SERVICIOS</p>
+                    <a href="#SEGUIMIENTO">
+                        <img src="Flecha.png" height="50px" id="flecha" >
+                    </a>
+                </center>
+                <p id="SEGUIMIENTO" style="margin-top: 800px; visibility: hidden;">.</p>
+                <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 100px;">SEGUIMIENTO <br>SEMANAL</h1>
+                <div id="caja1">
+
+                </div>
+                <div id="caja2">
+
+                </div>
             </div>
-            </center>
+            
             <div class="pag" id="pag2">
                 <h2>Contacto</h2>
                 <p>Si tienes alguna duda o quieres cotizar con nosotros, comunícate por nuestro correo redesocialessmp@gmail.com o por nuestro número +34 696 90 79 98.</p>
