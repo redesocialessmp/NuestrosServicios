@@ -18,7 +18,6 @@ function mostrar(indexPagina) {
     for (let i = 0; i < paginas.length; i++) {
         if (i != indexPagina) {
             paginas[i].style.opacity = '0';
-            paginas[i].style.transform = 'translateX(100%)';
             paginas[i].style.zIndex = '0';
             setTimeout(() => {
                 paginas[i].style.display = 'none';
@@ -30,10 +29,8 @@ function mostrar(indexPagina) {
     setTimeout(() => {
         paginas[indexPagina].style.display = 'block';
     }, 400);
-    document.body.style.width = "95%";
     setTimeout(() => {
         paginas[indexPagina].style.opacity = '1';
-        paginas[indexPagina].style.transform = 'translateX(0)';
         paginas[indexPagina].style.zIndex = '1';
     }, 600);
     botones[indexPagina].className = "boton activo";

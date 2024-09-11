@@ -7,25 +7,23 @@
 </head>
     <body>
         <script src="index.js"></script>
+                <nav>
+                    <a href="#" onclick="mostrar(0)" class="boton activo" id="inicio">Inicio</a>
+                    <a href="#" onclick="mostrar(1)" class="boton" id="servicios">Servicios</a>
+                    <a href="#" onclick="mostrar(2)" class="boton" id="contacto">Contacto</a>
+                </nav>
         <div class="container">
-            <nav>
-                <a href="#" onclick="mostrar(0)" class="boton activo" id="inicio">Inicio</a>
-                <a href="#" onclick="mostrar(1)" class="boton" id="servicios">Servicios</a>
-                <a href="#" onclick="mostrar(2)" class="boton" id="contacto">Contacto</a>
-            </nav>
-
             <div class="pag activa" id="pag0">
                 <h1 style="font-size: 50px;">NUESTROS <br> SERVICIOS</h1>
                 <center>
-                    <img src="Logo.png" height="400px" width="400px" style="margin-left:-20px;">
+                    <img src="Logo.png" height="400px" width="100%" style="margin-left:-20px;">
                     <p style=" font-size: 15px;">Conoce todos los servicios que ofrecemos.</p>
                 </center>
             </div>
-
             <div class="pag" id="pag1">
                 <center>
                     <p id="INICIO" style="visibility: hidden;">.</p>
-                    <h2 style="margin-top: 200px; font-size: 40px;">GESTIÓN DE <br>
+                    <h2 style="margin-top: 50%; font-size: 40px;">GESTIÓN DE <br>
                         REDES SOCIALES</h2>
                     <p style="font-size: 20px;">Facebook | Instagram | Tiktok</p>
                     
@@ -33,7 +31,7 @@
                     <a href="#CREACIÓN">
                         <img src="Flecha2.png" height="50px" id="flecha" >
                     </a>
-                    <p id="CREACIÓN" style="margin-top: 800px; visibility: hidden;">.</p>
+                    <p id="CREACIÓN" style="margin-top: 110%; visibility: hidden;">.</p>
                     <h2 style="margin-top: 50px; font-size: 40px; border-bottom: solid 2px white;">CREACIÓN DE <br>
                         CONTENIDO</h2>
                     <p style="font-size: 15px; margin-top: 40px;">Se realiza la creación de contenido a base de las necesidades de tus redes y de un análisis previo del rublo en el que se encuentra, con el fin de lograr crear el tipo de contenido más acertado para tu negocio.</p>
@@ -48,9 +46,8 @@
                             <img src="Flecha.png" height="50px" id="flecha">
                         </a>
                     </div>
-                    
                 </center>
-                <p id="SEGUIMIENTO" style="margin-top: 800px; visibility: hidden;">.</p>
+                <p id="SEGUIMIENTO" style="margin-top: 110%; visibility: hidden;">.</p>
                 <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 50px;">SEGUIMIENTO <br>SEMANAL</h1>
                 <div class="contenedorCajas">
                     <div id="caja1"></div>
@@ -73,7 +70,7 @@
                         <img src="Flecha.png" height="50px" id="flecha">
                     </a>
                 </center>
-                <p id="SEGUIMIENTOMENSUAL" style="margin-top: 400px; visibility: hidden;">.</p>
+                <p id="SEGUIMIENTOMENSUAL" style="margin-top: 110%; visibility: hidden;">.</p>
                 <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 40px;">SEGUIMIENTO <br>MENSUAL</h1>
                 <div class="contenedorCajas">
                     <div id="caja3"></div>
@@ -95,24 +92,24 @@
                     <a href="#SEGUIMIENTO">
                         <img src="Flecha.png" height="50px" id="flecha">
                     </a>
-                    <p id="ACESORIAS" style="margin-top: 600px; visibility: hidden;">.</p>
+                    <p id="ACESORIAS" style="margin-top: 110%; visibility: hidden;">.</p>
                     <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 240px;">ASESORÍAS <br>PERSONALIZADAS</h1>
                     <p>
                         Contamos con asesorías personalizadas donde te recomendaremos
                         estrategias y contenidos que pueden ayudar a crecer tu negocio en redes y
                         en base a eso se personaliza tu calendario de contenido mensual
                     </p>
-                    <p style="margin-top: 300px;">MÁS SERVICIOS</p>
+                    <p style="margin-top: 50%;">MÁS SERVICIOS</p>
                     <a href="#MATERIAL">
                         <img src="Flecha2.png" height="50px" id="flecha" >
                     </a>
                     <a href="#SEGUIMIENTOMENSUAL">
                         <img src="Flecha.png" height="50px" id="flecha">
                     </a>
-                    <p id="MATERIAL" style="margin-top: 600px; visibility: hidden;">.</p>
+                    <p id="MATERIAL" style="margin-top: 110%; visibility: hidden;">.</p>
                     <h1 style="border-bottom: white 2px solid; font-size: 40px; margin-top: 240px;">MATERIAL POP</h1>
                     <p>Te ayudamos a realizar tu material POP</p>
-                    <p style="margin-top: 300px;">MÁS SERVICIOS</p>
+                    <p style="margin-top: 50%;">MÁS SERVICIOS</p>
                     <a href="#ACESORIAS">
                         <img src="Flecha.png" height="50px" id="flecha">
                     </a>
@@ -131,7 +128,9 @@
                     </p>
                     <div>
                         <img src="correo.webp" width="70px" style="opacity: 0.7;">
-                        <img src="telefono.webp" width="70px" style="opacity: 0.7;">
+                        <a href="https://wa.link/rgzbrj">
+                            <img src="telefono.webp" width="70px" style="opacity: 0.7;">
+                        </a>
                     </div>
                 </center>
             </div>

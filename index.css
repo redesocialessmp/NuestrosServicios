@@ -18,7 +18,14 @@ body {
     background-image: url('textura.jpg');
     background-color: rgba(45, 45, 65, 1);
     background-blend-mode: overlay;
+    background-size: over;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container {
     width: 95%;
@@ -31,7 +38,6 @@ body {
     padding: 20px;
     display: none;
     opacity: 0;
-    transform: translatX(-100%);
     transition: opacity 0.5s ease, transform 0.5s ease;
     position: relative;
     
@@ -39,7 +45,6 @@ body {
 .pag.activa {
     display: block;
     opacity: 1;
-    transform: translateX(0);
 }
 nav {
     z-index: 1000;
@@ -47,8 +52,7 @@ nav {
     background-color: #49438b;
     border-radius: 20px;
     position: fixed;
-    width: 400px;
-    max-width: 430px;
+    width: 90%;
     height: 40px;
     top: 25px;
     display: flex;
@@ -70,6 +74,7 @@ nav a {
 
 #flecha {
     animation: temblar 0.5s infinite;
+    
 }
 
 @keyframes temblar {
@@ -118,6 +123,11 @@ nav a {
     border-radius: 20px;
     background-color: rgba(84, 84, 110, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (width: 850px) {
+    .contenedorSeguimiento {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 .textoSeguimiento {
     font-size: 14px;
